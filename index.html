@@ -435,9 +435,8 @@
     <div class="ty-card">
       <p class="ty-eyebrow">A note of thanks</p>
       <div class="ty-body">
-        <p>Thank you, <strong>Anurag</strong> and <strong>Deepti</strong>, for being the hands that launched Pontis into the world. This moment belongs to you.</p>
-        <p>Your presence here today means more than words can hold — you are not just witnesses to this launch, you are a part of Pontis's story from the very first day.</p>
-        <p>We are grateful for your trust, your warmth, and the honour of sharing this milestone with you.</p>
+        <p>Thank you, <strong>Shri K. T. Rama Rao Garu</strong>, for launching <strong>Pontis</strong> and making this milestone truly memorable for us.</p>
+        <p>We are sincerely grateful for your presence, encouragement, and support as Pontis takes its first step into the world.</p>
       </div>
     </div>
 
@@ -454,7 +453,7 @@
   <div id="screen-done" class="screen">
     <div class="done-icon">🚀</div>
     <div class="done-title">Already Live</div>
-    <p class="done-sub">Pontis was officially launched by Anurag and Deepti. The ceremony was a one-time event.</p>
+    <p class="done-sub">Pontis was officially launched by Shri K. T. Rama Rao Garu. The ceremony was a one-time event.</p>
     <a class="done-link" href="https://pontis.one" target="_blank">Visit pontis.one →</a>
   </div>
 
@@ -467,11 +466,7 @@
 
   // ── Boot ──
   window.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem(STORAGE_KEY) === '1') {
-      switchTo('screen-done');
-    } else {
-      switchTo('screen-pre');
-    }
+    switchTo('screen-pre');
   });
 
   // ── Launch sequence ──
@@ -510,7 +505,6 @@
   }
 
   function onZero() {
-    localStorage.setItem(STORAGE_KEY, '1');
     setTimeout(() => {
       switchTo('screen-live');
       confetti();
